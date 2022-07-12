@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Teste</title>
+</head>
+
+<body>
+
+    <h1 id="titulo">Manuais e Guias</h1>
+    <p id="descricao">
+        Nesta seção você encontrará os manuais e guias do Exame.
+    </p>
+    
+    <div id="flex-container">
+        <div id="manuais"> <!-- Manuais do lado esquerdo 
+                manual-active
+                --> 
+            <div class="manual" id="aplicador" onclick="exibirResultado(aplicador)">
+                Manual do Aplicador
+            </div>
+
+            <div class="manual" id="candidato"
+            onclick="exibirResultado(candidato)">
+                Manual do Candidato
+            </div>
+
+            <div class="manual" id="examinado"
+            onclick="exibirResultado(examinado)">
+                Manual do Examinado
+            </div>
+
+            <div class="manual" id="guias"
+            onclick="exibirResultado(guias)">
+                Guias
+            </div>
+            
+            <div class="manual" id="cartilha"
+            onclick="exibirResultado(cartilha)">
+                Cartilha do Participante
+            </div>
+
+            <div class="manual" id="documento"
+            onclick="exibirResultado(documento)">
+                Documento Base do Exame
+            </div>
+
+            <div class="manual" id="caderno"
+            onclick="exibirResultado(caderno)">
+                Caderno de Questões Comentadas
+            </div>
+
+        </div>
+
+        <div id="resultado">
+            
+            <!-- onclick="exibirResultado(aplicador) "-->
+            <div id="resultado-aplicador" class="resultado-inactive">
+                <h2>Manual do Aplicador</h2>
+                <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+            </div>
+            
+            <div id="resultado-candidato" class="resultado-inactive">
+                <h2>Manual do Candidato</h2>
+                <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+            </div>
+
+            <div id="resultado-examinado" class="resultado-inactive">
+                <h2>Manual do Examinado</h2>
+                <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+            </div>
+
+            <div id="resultado-guias" class="resultado-inactive">
+                <h2>Guias</h2>
+                <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+            </div>
+
+            <div id="resultado-cartilha" class="resultado-inactive">
+                <h2>Cartilhas</h2>
+                <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+            </div>
+
+            <div id="resultado-documento" class="resultado-inactive">
+                <h2>Documentos</h2>
+                <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+            </div>
+
+            <div id="resultado-caderno" class="resultado-inactive">
+                <h2>Cadernos</h2>
+                <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

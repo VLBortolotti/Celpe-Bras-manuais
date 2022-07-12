@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1#titulo {
+    text-align: center;
+    margin: 20px auto;
+}
+
+p#descricao {
+    text-align: center;
+}
+
+/* Flexbox */
+
+#flex-container {
+    margin: 40px 120px 120px 120px;
+    display: flex;
+}
+
+#manuais {
+    flex: 20%;
+    background-color: white;
+    list-style-type: none;
+    border-left: 1px solid grey;
+}
+
+.manual {
+    padding: 8px;
+    margin: 0 auto 5px 0;
+    cursor: pointer;
+}
+
+.manual:not(.manual-active):hover {
+    background-color:rgb(234, 231, 231);
+}
+
+div.manual-active {
+    background-color: rgb(203, 199, 199);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* max-height e overflow */
+#resultado {
+    flex: 60%;
+    padding: 10px;
+    height: 300px;
+    background-color: rgb(203, 199, 199);
+}
+
+.resultado-inactive {
+    display: none;
+}
+
+.resultado-active {
+    display: visible;
+}
